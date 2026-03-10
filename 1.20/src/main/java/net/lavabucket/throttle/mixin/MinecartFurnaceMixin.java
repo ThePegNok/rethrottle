@@ -36,6 +36,6 @@ public class MinecartFurnaceMixin {
      */
     @Inject(method = "getMaxFurnaceSpeedWithRail", at = @At("HEAD"), cancellable=true, remap=false)
     private void getMaxFurnaceSpeedWithRail(CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(0.8f)
+        cir.setReturnValue(0.8f);
     }
 }
