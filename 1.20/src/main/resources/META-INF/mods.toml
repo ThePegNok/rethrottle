@@ -17,7 +17,7 @@ issueTrackerURL="https://github.com/DuckyCrayfish/throttle/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="throttle" #mandatory
+modId="rethrottle" #mandatory
 
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
@@ -25,7 +25,7 @@ modId="throttle" #mandatory
 version="${file.jarVersion}" #mandatory
 
  # A display name for the mod
-displayName="Throttle" #mandatory
+displayName="ReThrottle" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 updateJSONURL="https://raw.githubusercontent.com/DuckyCrayfish/throttle/main/res/versions.json" #optional
@@ -40,11 +40,11 @@ displayURL="https://github.com/DuckyCrayfish/throttle" #optional
 # credits="" #optional
 
 # A text field displayed in the mod UI
-authors="DuckyCrayfish" #optional
+authors="DuckyCrayfish, ThePegnok" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Minecarts are underpowered. Throttle is a simple Forge mod with the sole purpose of
+Minecarts are underpowered. ReThrottle port for 1.20 of the mod Throttle with the sole purpose of
 balancing minecart speed in a vanilla-friendly way by increasing the speed
 cap from 8 m/s to 16 m/s.
 
@@ -55,7 +55,7 @@ The top speed can also be customized to any value greater than zero in the confi
 displayTest="IGNORE_SERVER_VERSION"
 
 
-[[dependencies.throttle]] #optional
+[[dependencies.rethrottle]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
