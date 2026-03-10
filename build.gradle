@@ -1,7 +1,7 @@
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 allprojects {
-    version = '1.0.0.0'
+    version = '1.0'
     group = 'net.lavabucket.throttle'
     project.ext.vendor = 'lavabucket.net'
 

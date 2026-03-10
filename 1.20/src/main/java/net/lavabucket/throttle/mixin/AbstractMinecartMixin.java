@@ -71,7 +71,7 @@ public abstract class AbstractMinecartMixin extends Entity implements IForgeAbst
      */
     @Inject(method = "moveAlongTrack", at = @At("TAIL"))
     protected void onMoveAlongTrack(CallbackInfo info) {
-        if (getCurrentCartSpeedCapOnRail() <= 0.4 || remainingTickDistance != 0 || super.level.isClientSide()) {
+        if (getCurrentCartSpeedCapOnRail() <= 0.4 || remainingTickDistance != 0 || this.level().isClientSide()) {
             return;
         }
 
@@ -108,13 +108,13 @@ public abstract class AbstractMinecartMixin extends Entity implements IForgeAbst
         int z = (int) Math.floor(this.getZ());
 
         BlockPos pos = new BlockPos(x, y - 1, z);
-        BlockState state = this.level.getBlockState(pos);
+        BlockState state = this.level().getBlockState(pos);
         if (BaseRailBlock.isRail(state)) {
             return new Tuple<>(pos, state);
         }
 
         pos = new BlockPos(x, y, z);
-        state = this.level.getBlockState(pos);
+        state = this.level().getBlockState(pos);
         if (BaseRailBlock.isRail(state)) {
             return new Tuple<>(pos, state);
         }

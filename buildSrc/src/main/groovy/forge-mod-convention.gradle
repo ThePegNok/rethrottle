@@ -42,7 +42,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'throttle'
+            property 'forge.enabledGameTestNamespaces', 'rethrottle'
 
             mods {
                 throttle {
