@@ -1,4 +1,2 @@
-rootProject.name = 'throttle'
-include ':1.18'
-include ':1.17'
-include ':1.16.2'
+rootProject.name = 'rethrottle'
+include ':1.20'
