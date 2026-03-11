@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "ReThrottle resources",
+        "description": "Throttle resources",
         "pack_format": 6
     }
 }

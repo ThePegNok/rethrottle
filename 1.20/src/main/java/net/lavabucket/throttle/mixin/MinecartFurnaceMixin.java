@@ -25,17 +25,11 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-/**
- * The mixin for modifying furnace minecart behavior.
- */
 @Mixin(MinecartFurnace.class)
 public class MinecartFurnaceMixin {
 
-    /**
-     * Increases default minecart speed so it matches The one from throttle when configured
-     */
-    @Inject(method = "getMaxFurnaceSpeedWithRail", at = @At("HEAD"), cancellable=true, remap=false)
-    private void getMaxFurnaceSpeedWithRail(CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(0.8f);
+    @Inject(method = "getMaxCartSpeedOnRail", at = @At("HEAD"), cancellable = true, remap = false)
+    private void getMaxCartSpeedOnRail(CallbackInfoReturnable<Float> cir) {
+        cir.setReturnValue(1.2F);
     }
 }

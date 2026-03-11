@@ -5,7 +5,7 @@ plugins {
 
 // Project details
 def minecraftVersion = '1.20.1'
-def forgeVersion = '47.4.16'
+def forgeVersion = '47.3.0'
 
 // (,1.17): 8
 // [1.17,1.18): 16
